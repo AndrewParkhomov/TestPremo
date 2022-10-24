@@ -38,15 +38,17 @@ kotlin {
                 baseName = "Common"
                 export(project(":premo"))
                 export(project(":premo-navigation"))
+//                export("me.dmdev.premo:premo:1.0.0-alpha.06")
+//                export("me.dmdev.premo:premo-navigation:1.0.0-alpha.06")
                 export(Libs.coroutinesCore)
             }
         }
     }
 
-    jvm()
-    js(IR) {
-        browser()
-    }
+//    jvm()
+//    js(IR) {
+//        browser()
+//    }
     android()
 
     sourceSets {
@@ -59,6 +61,8 @@ kotlin {
             dependencies {
                 api(project(":premo"))
                 api(project(":premo-navigation"))
+//                api("me.dmdev.premo:premo:1.0.0-alpha.06")
+//                api("me.dmdev.premo:premo-navigation:1.0.0-alpha.06")
                 api(Libs.coroutinesCore)
                 api(Libs.kotlinxSerializationJson)
                 api(Libs.kotlinxSerializationProtobuf)

@@ -32,11 +32,11 @@ plugins {
 
 kotlin {
     android()
-    jvm("desktop") {
-        compilations.all {
-            kotlinOptions.jvmTarget = "11"
-        }
-    }
+//    jvm("desktop") {
+//        compilations.all {
+//            kotlinOptions.jvmTarget = "11"
+//        }
+//    }
     sourceSets {
 
         all {
@@ -58,12 +58,12 @@ kotlin {
             }
         }
 
-        val desktopMain by getting {
-            dependsOn(commonMain)
-            dependencies {
-                api(compose.preview)
-            }
-        }
+//        val desktopMain by getting {
+//            dependsOn(commonMain)
+//            dependencies {
+//                api(compose.preview)
+//            }
+//        }
     }
 }
 
