@@ -112,8 +112,8 @@ val packForXcode by tasks.creating(Sync::class) {
 
 tasks.getByName("build").dependsOn(packForXcode)
 
-kotlin.targets.withType(KotlinNativeTarget::class.java) {
-    binaries.all {
-        binaryOptions["memoryModel"] = "experimental"
-    }
-}
+//kotlin.targets.withType(KotlinNativeTarget::class.java) {
+//    binaries.all {
+//        binaryOptions["memoryModel"] = "experimental"
+//    }
+//}
